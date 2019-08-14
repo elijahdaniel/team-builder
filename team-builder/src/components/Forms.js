@@ -23,27 +23,48 @@ const Forms = props => {
         <input
           type='text'
           name='fullname'
-          placeholder='Enter Your Full Name'
           value={state.fullname}
           onChange={changeState}
+          style={{
+            border: '1px solid black',
+            outline: '0',
+            fontSize: '1rem',
+            width: '400px',
+            margin: '0 auto'
+          }}
+          required
         />
 
         <label htmlFor='email'>Email</label>
         <input
           type='text'
           name='email'
-          placeholder='Email'
           value={state.email}
           onChange={changeState}
+          style={{
+            border: '1px solid black',
+            outline: '0',
+            fontSize: '1rem',
+            width: '400px',
+            margin: '0 auto'
+          }}
+          required
         />
 
-        <label htmlFor='role'>Full Name</label>
+        <label htmlFor='role'>Role</label>
         <input
           type='text'
           name='role'
-          placeholder='Role'
           value={state.role}
           onChange={changeState}
+          style={{
+            border: '1px solid black',
+            outline: '0',
+            fontSize: '1rem',
+            width: '400px',
+            margin: '0 auto'
+          }}
+          required
         />
 
         <button type='submit'>Submit</button>

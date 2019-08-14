@@ -3,6 +3,7 @@ import './App.css';
 import Forms from './components/Forms';
 import Entries from './components/Entries';
 import People from './data';
+import { Flex, SideWidth } from './Style';
 
 function App() {
   const [state, setState] = useState(People);
@@ -12,9 +13,13 @@ function App() {
   };
 
   return (
-    <div className='form-container'>
-      <Forms addNewState={addNewState} />
-      <Entries People={state} />
+    <div className='container' style={Flex}>
+      <div className='left' style={SideWidth}>
+        <Forms addNewState={addNewState} />
+      </div>
+      <div className='right' style={SideWidth}>
+        <Entries People={state} />
+      </div>
     </div>
   );
 }

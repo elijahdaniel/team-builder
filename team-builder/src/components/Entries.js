@@ -5,10 +5,15 @@ const Entries = props => {
     <div>
       {props.People.map(e => {
         return (
-          <div key={e.id}>
+          <div className='card' key={e.id}>
             <h3>{e.fullname}</h3>
-            <p>{e.email}</p>
-            <p>{e.role}</p>
+            <p>
+              <i className='fas fa-envelope' /> &nbsp;
+              {e.email}
+            </p>
+            <p>
+              <i className='fas fa-briefcase' /> &nbsp; {e.role}
+            </p>
           </div>
         );
       })}

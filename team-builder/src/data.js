@@ -2,19 +2,19 @@ const People = [
   {
     id: 1,
     fullname: 'Elijah Daniel',
-    email: 'e.paminsan@gmail.com',
+    email: 'E.Paminsan@Gmail.com',
     role: 'Developer'
   },
   {
     id: 2,
     fullname: 'Calvin Nguyen',
-    email: 'calvin@gmail.com',
+    email: 'Calvin@Mail.com',
     role: 'Graphic Designer'
   },
   {
     id: 3,
     fullname: 'Zhaion Silei',
-    email: 'zhaion@gmail.com',
+    email: 'Zhaion@Mail.com',
     role: 'Data Scientist'
   }
 ];
